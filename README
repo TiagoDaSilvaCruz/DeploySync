@@ -1,4 +1,4 @@
-# DeploySync v1.0
+# DeploySync v1.1
 
 ## Descrição
 DeploySync é uma ferramenta automatizada para monitorar alterações em um diretório de projeto e realizar deploys automáticos para um repositório GitHub. Ele verifica as mudanças em horários específicos e, se detectadas, realiza o deploy automaticamente.
