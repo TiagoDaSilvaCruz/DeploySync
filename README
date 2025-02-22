@@ -1,0 +1,25 @@
+# DeploySync v1.0
+
+## Descrição
+DeploySync é uma ferramenta automatizada para monitorar alterações em um diretório de projeto e realizar deploys automáticos para um repositório GitHub. Ele verifica as mudanças em horários específicos e, se detectadas, realiza o deploy automaticamente.
+
+## Funcionalidades
+- Monitoramento de alterações em um diretório de projeto.
+- Deploy automático para um repositório GitHub.
+- Configuração de horários específicos para verificação de alterações.
+- Interface gráfica para configuração de usuário, repositório, diretório do projeto e token do GitHub.
+- Suporte para múltiplos projetos (em desenvolvimento).
+- Notificações por email (em desenvolvimento).
+
+## Configuração
+### Interface Gráfica
+A interface gráfica permite configurar as seguintes informações:
+- Usuário do GitHub
+- Repositório do GitHub
+- Diretório do Projeto
+- Token do GitHub
+
+## Como Usar
+- Execute o script interface.py para -abrir a interface gráfica e configurar as informações necessárias.
+- Execute o script main.py para iniciar o monitoramento e deploy automático.
+```
