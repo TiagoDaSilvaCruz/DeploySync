@@ -1,0 +1,56 @@
+# DeploySync v1.2
+
+## Descrição
+DeploySync é uma ferramenta automatizada para monitorar alterações em um diretório de projeto e realizar deploys automáticos para um repositório GitHub. Ele verifica as mudanças em horários específicos e, se detectadas, realiza o deploy automaticamente.
+
+## Funcionalidades
+- Monitoramento de alterações em um diretório de projeto.
+- Deploy automático para um repositório GitHub.
+- Configuração de horários específicos para verificação de alterações.
+- Interface gráfica para configuração de usuário, repositório, diretório do projeto, token do GitHub e horário de verificação.
+- Suporte para múltiplos projetos (em desenvolvimento).
+- Notificações por email (em desenvolvimento).
+
+## Configuração
+### Interface Gráfica
+A interface gráfica permite configurar as seguintes informações:
+- Usuário do GitHub
+- Repositório do GitHub
+- Diretório do Projeto
+- Token do GitHub
+- Horário de verificação
+
+## Como Usar
+### Usando o Executável `.exe`
+1. Gere o executável usando o `pyinstaller` com o arquivo de especificação `deploy_sync.spec`:
+   ```sh
+   pyinstaller deploy_sync.spec
+   ```
+2. Navegue até a pasta `dist/DeploySync` e execute o arquivo `DeploySync.exe` para abrir a interface gráfica e configurar as informações necessárias.
+3. Após salvar as configurações, o monitoramento e deploy automático serão iniciados automaticamente.
+
+### Usando os Arquivos Python
+1. Execute o script `interface.py` para abrir a interface gráfica e configurar as informações necessárias:
+   ```sh
+   python interface.py
+   ```
+2. Preencha as informações necessárias e clique em "Salvar Configurações".
+3. O script `main.py` será executado automaticamente para iniciar o monitoramento e deploy automático.
+
+## Requisitos
+- Python 3.x
+- Bibliotecas: `tkinter`, `yaml`, `schedule`, `subprocess`, `hashlib`, `json`, `os`, `datetime`
+
+## Instalação
+1. Clone o repositório para o seu diretório local.
+2. Instale as bibliotecas necessárias:
+   ```sh
+   pip install pyyaml schedule
+   ```
+
+## Observações
+- Certifique-se de que o token do GitHub tenha permissões adequadas para realizar commits e push no repositório configurado.
+- O horário de verificação deve ser configurado no formato `HH:MM`.
+
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests para melhorias e novas funcionalidades.
